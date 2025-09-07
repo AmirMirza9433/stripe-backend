@@ -54,7 +54,7 @@ app.post("/create-square-payment", async (req, res) => {
         amount: BigInt(amount), // Amount in smallest currency unit
         currency: currency.toUpperCase(),
       },
-      locationId: locationId || "SQUARE_LOCATION_ID",
+      locationId: locationId || "LNEMG6VQ7GMEE",
       acceptPartialAuthorization: false,
       autocomplete: true,
       note: "Payment processed without CVV verification",
@@ -265,7 +265,7 @@ app.post("/pay-with-stored-card", async (req, res) => {
         amount: BigInt(amount),
         currency: currency.toUpperCase(),
       },
-      locationId: "SQUARE_LOCATION_ID",
+      locationId: "LNEMG6VQ7GMEE",
       customerId: customerId,
       autocomplete: true,
       note: "Payment with stored card - no CVV required",
